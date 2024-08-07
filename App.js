@@ -3,12 +3,20 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={{ padding: 50 }}>
+    <View
+      style={{
+        padding: 50,
+        flexDirection: "row",
+        alignItems: "stretch",
+        width: "80%",
+        height: 300,
+        justifyContent: "space-between",
+      }}
+    >
       <View
         style={{
           backgroundColor: "red",
-          width: 100,
-          height: 100,
+          flex: 1,
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -18,8 +26,7 @@ export default function App() {
       <View
         style={{
           backgroundColor: "blue",
-          width: 100,
-          height: 100,
+          flex: 1,
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -29,8 +36,7 @@ export default function App() {
       <View
         style={{
           backgroundColor: "green",
-          width: 100,
-          height: 100,
+          flex: 1,
           justifyContent: "center",
           alignItems: "center",
         }}
